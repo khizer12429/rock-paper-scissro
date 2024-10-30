@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="first_heading">
+        <p>Rock Paper Scissor</p>
+    </div>
+    <div class="second_heading">
+        <p>User Choice:</p>
+    </div>
+    <div class="main_opt">
+        <div class="choice">
+            <img src="images/rock.png" onclick="user_choice('rock')">
+        </div>
+        <div class="choice">
+            <img src="images/paper.png" onclick="user_choice('paper')">
+        </div>
+        <div class="choice">
+            <img src="images/scissor.png" onclick="user_choice('scissor')">
+        </div>
+    </div>
+    <div class="computer_choice">
+        <div class="Last">
+            <p id="last_msg"></p> 
+        </div>
+    </div>
+        <div class="com_imgs">
+            <img id="com_img">
+        </div>
+    <div class="main_score">
+        <div class="user_score">
+            <div class="number">
+                <p id="usersc">0</p>
+            </div>
+            <div class="number">
+                <p id="compsc">0</p>
+            </div>
+        </div>
+        <div class="comp_score">
+            <div class="alphabet">
+                <p>You</p>
+            </div>
+            <div class="alphabets">
+                <p>Computer</p>
+            </div>
+        </div>
+    </div>
+        <div class="reset">
+            <button id="resets" onclick="resetForm()">Reset button</button>
+        </div>
+</body>
+<script src="script.js"></script>
+
+</html>
